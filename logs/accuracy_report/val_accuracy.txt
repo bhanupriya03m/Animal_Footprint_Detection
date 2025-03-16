@@ -1,6 +1,6 @@
 Loaded 18 class names: ['beaver', 'black_bear', 'bob_cat', 'coyote', 'elephant', 'goose', 'gray_fox', 'horse', 'lion', 'mink', 'mouse', 'muledeer', 'otter', 'raccoon', 'rat', 'skunk', 'turkey', 'western_grey_squirrel']
 
-🔍 Validating on Training Set...
+🔍 Validating on Validation Set...
 
 ✅ Validation Accuracy: : 85.45%
 
