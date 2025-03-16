@@ -1,0 +1,32 @@
+Loaded 18 class names: ['beaver', 'black_bear', 'bob_cat', 'coyote', 'elephant', 'goose', 'gray_fox', 'horse', 'lion', 'mink', 'mouse', 'muledeer', 'otter', 'raccoon', 'rat', 'skunk', 'turkey', 'western_grey_squirrel']
+
+🔍 Validating on Testing Set...
+
+✅ Testing Accuracy: 82.86%
+
+📊 Testing Classification Report:
+                       precision    recall  f1-score   support
+
+               beaver       0.65      0.83      0.73        18
+           black_bear       0.79      0.94      0.86        36
+              bob_cat       0.79      0.94      0.86        36
+               coyote       0.89      0.89      0.89        18
+             elephant       1.00      0.20      0.33         5
+                goose       0.93      0.87      0.90        31
+             gray_fox       0.72      0.90      0.80        20
+                horse       0.80      0.67      0.73         6
+                 lion       0.93      0.76      0.84        17
+                 mink       0.83      0.71      0.77        21
+                mouse       0.85      0.85      0.85        27
+             muledeer       0.82      0.85      0.84        33
+                otter       0.94      1.00      0.97        15
+              raccoon       0.85      0.81      0.83        62
+                  rat       0.76      0.72      0.74        18
+                skunk       0.82      0.75      0.78        24
+               turkey       0.84      0.94      0.89        17
+western_grey_squirrel       0.88      0.73      0.80        51
+
+             accuracy                           0.83       455
+            macro avg       0.84      0.80      0.80       455
+         weighted avg       0.84      0.83      0.83       455
+         

@@ -18,21 +18,15 @@ transform = transforms.Compose([
     transforms.ToTensor()
 ])
 
-# Load train, test, and val datasets
-train_dataset = datasets.ImageFolder(root=r"D:\animal_footprint_app\data\OpenAnimalTracks\cropped_imgs\train", transform=transform)
-test_dataset = datasets.ImageFolder(root=r"D:\animal_footprint_app\data\OpenAnimalTracks\cropped_imgs\test", transform=transform)
-val_dataset = datasets.ImageFolder(root=r"D:\animal_footprint_app\data\OpenAnimalTracks\cropped_imgs\val", transform=transform)
-
+# Load only train dataset
+train_dataset = datasets.ImageFolder(root=r"animal-footprint-detection\dataset\OpenAnimalTracks\cropped_imgs\train", transform=transform)
 train_loader = DataLoader(train_dataset, batch_size=16, shuffle=True)
-test_loader = DataLoader(test_dataset, batch_size=16, shuffle=False)
-val_loader = DataLoader(val_dataset, batch_size=16, shuffle=False)
 
-# Combine all class names
-class_names = list(set(train_dataset.classes + test_dataset.classes + val_dataset.classes))
-class_names.sort()
+# Get class names from train dataset
+class_names = train_dataset.classes
 num_classes = len(class_names)
 
-print(f"Total classes found across train, test, and val: {num_classes}")
+print(f"Total classes found in train dataset: {num_classes}")
 print(f"Class names: {class_names}")
 
 # Initialize CNN

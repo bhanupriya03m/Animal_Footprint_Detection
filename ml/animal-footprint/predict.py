@@ -57,6 +57,6 @@ def predict_image(image_path):
     print(f"Predicted Class: {predicted_class}")
 
 # Step 6️⃣: Test with an Image
-image_path = r"D:\animal_footprint_app\data\OpenAnimalTracks\cropped_imgs\test\mink\181.jpg"
+image_path = r"animal-footprint-detection\dataset\OpenAnimalTracks\cropped_imgs\test\black_bear\352.jpg"
 # data\OpenAnimalTracks\cropped_imgs
 predict_image(image_path)

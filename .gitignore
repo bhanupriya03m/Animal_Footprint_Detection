@@ -1,2 +1,5 @@
 data
 frontend/node_modules
+dataset
+instructions.txt
+.gitignore
